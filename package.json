@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha --exit",
-    "push": "git push origin dev:dev",
+    "push": "git push origin",
     "dev": "NODE_ENV=development nodemon index.js",
     "start": "NODE_ENV=production node index.js",
     "lint": "eslint --ext .js ./ --fix",
