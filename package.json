@@ -1,0 +1,60 @@
+{
+  "name": "express-starter",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha --exit",
+    "push": "git push origin dev:dev",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "lint": "eslint --ext .js ./ --fix",
+    "release": "standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbbetWang/express-starter.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "AbbetWang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AbbetWang/express-starter/issues"
+  },
+  "homepage": "https://github.com/AbbetWang/express-starter#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "codecov": "^3.6.5",
+    "commitlint": "^8.3.5",
+    "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-standard": "^3.1.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.2",
+    "nyc": "^15.0.0",
+    "should": "^13.2.3",
+    "standard-version": "^7.1.0",
+    "supertest": "^4.0.2"
+  }
+}
