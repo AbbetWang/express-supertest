@@ -1,4 +1,4 @@
-# Nodejs Express demo express-starter
+# Nodejs Express demo express-supertest
 
 This is a demo application illustrating various features used in everyday web development, with a fine touch of best practices. 
 
@@ -19,7 +19,7 @@ This is a demo application illustrating various features used in everyday web de
 ## Install
 
 ```sh
-git clone git://github.com/AbbetWang/express-starter.git
+git clone git://github.com/AbbetWang/express-supertest.git
 yarn 
 yarn dev
 ```
