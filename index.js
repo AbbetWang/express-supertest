@@ -29,4 +29,10 @@ app.use('/api', defaultRoutes)
 const bootstrap = async () => {
   app.listen(config.port, () => console.info(`Example app listening on port ${config.port}!`))
 }
-bootstrap()
+// distigush weather is product
+if (!module.parent) {
+  bootstrap()
+  console.log(`✅  The server is running at http://localhost:${config.port}`)
+}
+
+module.exports = app
