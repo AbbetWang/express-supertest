@@ -17,10 +17,10 @@ describe('GET /users!!!', () => {
   })
 })
 
-describe('GET /users/:id!!!', () => {
+describe('GET /user/:id!!!', () => {
   it('response success!!', () => {
     request(server)
-      .get('/api/users/1')
+      .get('/api/user/1')
       .set('Accept', 'application/json')
       .expect(200)
       .then((res) => {
